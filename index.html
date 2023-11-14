@@ -9,8 +9,14 @@
 <body>
     
     <div class="container">
-        <button onclick="generatePass()">Generate</button>
-        <span>Your password: </span>
+        <a href="#" onclick="generatePass()" class="btn-neon">
+           Generate
+            <svg height="50" width="180">
+              <polyline points="0,0 180,0 180,50 0,50 0,00">
+              </polyline>
+            </svg>
+          </a>
+        <span>YOUR PASSWORD: </span>
         <span class="passArea"></span>
     </div>
     <script src="app.js"></script>
