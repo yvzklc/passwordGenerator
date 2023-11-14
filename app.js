@@ -17,15 +17,17 @@ const generatePass = ()=>{
         pass.push(num)
     }
     for(let i = 0; i < 2 ; i++){
- 
-        pass.push(symbols[i])
+        const x = Math.floor(Math.random() * 9)
+        pass.push(symbols[x])
     }
     for(let i = 0; i < 5 ; i++){
         
         if(i % 2 == 0){
+            const x = Math.floor(Math.random() * 9)
             pass.push(alphabet[i])
 
         }else{
+            const x = Math.floor(Math.random() * 9)
             pass.push(letterx[i])
 
         }
