@@ -1,28 +1,4 @@
-// password length must be equal to 10
-
-// there should be 3 numbers
-
-// and there should 2 symbols from below:
-
-// !@#$%^&*()\_+~|}{[]:;?><,./-=
-
-// excluding single and double quotes
-
-// there should be minimum 1 lower and 1 upper case letters,
-
-// valid samples:
-
-// Aa123&!xyz
-// Aa@/456stu
-// 123aA(p?rs
-
-// invalid samples:
-
-// AB123&!XYZ   // no lower case letters
-// ab123&!xyz   // no upper case letters
-// Aa@c456stu   // only one symbol
-// 12aA(p?rsz   // only two numbers
-
+const passArea = document.querySelector(".passArea")
 const generatePass = ()=>{
     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];   
     const numbers = []
@@ -59,13 +35,13 @@ const generatePass = ()=>{
     const sortingPass = (v)=>{
         result = v.sort(() => Math.random() - 0.5) 
         text = result.join("")
-        console.log(text)
+        passArea.textContent = text
     }
      sortingPass(pass);
     
     
 }
 
-generatePass()
+
 
 
