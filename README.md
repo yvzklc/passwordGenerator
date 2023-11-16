@@ -16,7 +16,8 @@ Example:
 
 If you set the password length to 10 characters and the character types to "All", the following password will be generated:
 Q@B49x2z
-
+Screenshots:
+[!](./img/projectImg.png)
 Frequently Asked Questions:
 
 How is password security guaranteed?
